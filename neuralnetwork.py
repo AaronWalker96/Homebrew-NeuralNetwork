@@ -1,16 +1,21 @@
+import random
 from math import exp
 
 #Input layer
 inputNode1 = 9
 inputNode2 = 3
 
+#Random weight generator
+def randWeight():
+    return random.uniform(0.0, 1.0)
+
 #Weight set 1 (input layer to hidden layer)
-w1 = 0.2
-w2 = 0.4
-w3 = 0.8
-w4 = 0.5
-w5 = 0.3
-w6 = 0.5
+w1 = randWeight()
+w2 = randWeight()
+w3 = randWeight()
+w4 = randWeight()
+w5 = randWeight()
+w6 = randWeight()
 
 #Hidden layer 
 hiddenNode1 = 0
@@ -18,9 +23,9 @@ hiddenNode2 = 0
 hiddenNode3 = 0
 
 #Weight set 2 (hidden layer to output layer)
-w7 = 0.6
-w8 = 0.3
-w9 = 0.6
+w7 = randWeight()
+w8 = randWeight()
+w9 = randWeight()
 
 #Output layer
 outputNode = 0
